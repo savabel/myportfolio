@@ -1,0 +1,168 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  color: #ABA6BF;
+}
+
+html {
+  background-color:#595775;  
+}
+
+nav {
+  height: 6rem;
+}
+
+nav ul a,
+nav .brand-logo,
+.page-footer, 
+.page-footer .footer-copyright,
+#dividerL, 
+#dividerR,
+.nav-wrapper {
+  color:#583E2E;
+}
+
+a {
+  color: #F1E0D6;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.btn {
+  background-color: #2F4858;
+}
+
+#profileImg {
+  margin-top: 2.25rem;
+}
+
+/* .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+} */
+  
+.parallax-container .section {
+    width: 100%;
+  }
+
+  @media only screen and (min-width : 915px) {
+    #profileImg {
+      margin-top: 3rem;
+    }
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .at600 {
+    margin-top: 2.25rem;
+  }
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* contact me css */
+
+.links li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 0.75rem;
+  margin-left:0.25rem;
+  color:#2F4858;
+}
+
+/* form css */
+
+/* Styling by u/runninghair08 stackoverflow
+https://stackoverflow.com/questions/37127123/change-color-of-underline-input-and-label-in-materialize-css-framework */
+
+/* Inactive/Active Default input field color */
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #2F4858;
+    box-shadow: 0 1px 0 0 #2F4858;
+}
+
+/* Inactive/Active Default input label color */
+.input-field input[type]:focus:not([readonly])+label,
+.input-field textarea:focus:not([readonly])+label {
+    color: #2F4858;
+}
+
+/* Active/Inactive Invalid input field colors */
+.input-field input[type].invalid,
+.input-field input[type].invalid:focus,
+.input-field textarea.invalid,
+.input-field textarea.invalid:focus {
+    border-bottom: 1px solid #2F4858;
+    box-shadow: 0 1px 0 0 #2F4858;
+}
+
+/* Active/Inactive Invalid input label color */
+.input-field input[type].invalid:focus+label,
+.input-field input[type].invalid~.helper-text::after,
+.input-field input[type].invalid:focus~.helper-text::after, 
+.input-field textarea.invalid:focus+label,
+.input-field textarea.invalid~.helper-text::after,
+.input-field textarea.invalid:focus~.helper-text::after {
+    color: #2F4858;
+}
+
+/* Active/Inactive Valid input field color */
+.input-field input[type].valid,
+.input-field input[type].valid:focus,
+.input-field textarea.valid,
+.input-field textarea.valid:focus {
+    border-bottom: 1px solid #2F4858;
+    box-shadow: 0 1px 0 0 #2F4858;
+}
+
+/* Active/Inactive Valid input label color */
+.input-field input[type].valid:focus+label,
+.input-field input[type].valid~.helper-text::after,
+.input-field input[type].valid:focus~.helper-text::after,
+.input-field textarea.valid:focus+label,
+.input-field textarea.valid~.helper-text::after,
+.input-field textarea.valid:focus~.helper-text::after {
+    color: #2F4858;
+}
+
+
+/* adding styling from https://pupungbp.com/remove-default-button-and-form-styling-on-safari-ios/
+in attempt to resolve button issues on safari */
+input[type=text], input[type=button] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  }
